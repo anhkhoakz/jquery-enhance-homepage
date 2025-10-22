@@ -15,25 +15,25 @@
 	--glass-shadow: rgba(0, 0, 0, 0.1);
 	--glass-shadow-hover: rgba(0, 0, 0, 0.15);
 
-	/* Primary Colors */
-	--color-primary: #6366f1;
-	--color-primary-hover: #4f46e5;
-	--color-primary-light: #a5b4fc;
-	--color-secondary: #06b6d4;
-	--color-accent: #f59e0b;
-	--color-accent-hover: #d97706;
+	/* Primary Colors - Using Nord Palette */
+	--color-primary: var(--nord8);
+	--color-primary-hover: var(--nord9);
+	--color-primary-light: var(--nord7);
+	--color-secondary: var(--nord7);
+	--color-accent: var(--nord10);
+	--color-accent-hover: var(--nord9);
 
-	/* Text Colors */
-	--color-text: #1f2937;
-	--color-text-light: #6b7280;
-	--color-text-muted: #9ca3af;
-	--color-text-inverse: #ffffff;
+	/* Text Colors - Using Nord Palette */
+	--color-text: var(--nord0);
+	--color-text-light: var(--nord3);
+	--color-text-muted: var(--nord2);
+	--color-text-inverse: var(--nord6);
 
-	/* Background Colors */
-	--color-bg: #f8fafc;
-	--color-bg-secondary: #f1f5f9;
-	--color-bg-gradient: linear-gradient(135deg, #eceff4 0%, #ebcb8b 100%);
-	--color-bg-gradient-alt: linear-gradient(135deg, #eceff4 0%, #ebcb8b 100%);
+	/* Background Colors - Using Nord Palette */
+	--color-bg: var(--nord6);
+	--color-bg-secondary: var(--nord5);
+	--color-bg-gradient: linear-gradient(135deg, var(--nord6) 0%, var(--nord5) 100%);
+	--color-bg-gradient-alt: linear-gradient(135deg, var(--nord6) 0%, var(--nord5) 100%);
 
 	/* Glass Effects */
 	--backdrop-blur: blur(20px);
@@ -91,14 +91,14 @@
 	--glass-shadow: rgba(0, 0, 0, 0.3);
 	--glass-shadow-hover: rgba(0, 0, 0, 0.4);
 
-	--color-text: #f9fafb;
-	--color-text-light: #d1d5db;
-	--color-text-muted: #9ca3af;
+	--color-text: var(--nord6);
+	--color-text-light: var(--nord4);
+	--color-text-muted: var(--nord3);
 
-	--color-bg: #0f172a;
-	--color-bg-secondary: #1e293b;
-	--color-bg-gradient: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 100%);
-	--color-bg-gradient-alt: linear-gradient(135deg, #be185d 0%, #7c2d12 100%);
+	--color-bg: var(--nord0);
+	--color-bg-secondary: var(--nord1);
+	--color-bg-gradient: linear-gradient(135deg, var(--nord0) 0%, var(--nord1) 100%);
+	--color-bg-gradient-alt: linear-gradient(135deg, var(--nord0) 0%, var(--nord1) 100%);
 }
 
 /* ==========================================================================
@@ -246,7 +246,7 @@ body::after {
    ========================================================================== */
 
 .banner {
-	background: linear-gradient(135deg, var(--color-accent) 0%, #f97316 100%);
+	background: linear-gradient(135deg, var(--nord13) 0%, var(--nord12) 100%);
 	color: var(--color-text-inverse);
 	padding: var(--space-4);
 	text-align: center;
@@ -334,21 +334,6 @@ body::after {
 	margin-bottom: var(--space-6);
 }
 
-.logo-icon {
-	color: var(--color-primary);
-	filter: drop-shadow(0 4px 8px rgba(99, 102, 241, 0.3));
-	animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-	0%,
-	100% {
-		transform: translateY(0px);
-	}
-	50% {
-		transform: translateY(-10px);
-	}
-}
 
 .header h1 {
 	font-size: clamp(3rem, 8vw, 5rem);
@@ -806,7 +791,7 @@ body::after {
 	width: 60px;
 	height: 60px;
 	margin: 0 auto var(--space-4);
-	background: linear-gradient(135deg, var(--color-accent), #f97316);
+	background: linear-gradient(135deg, var(--nord13), var(--nord12));
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
@@ -814,12 +799,12 @@ body::after {
 	color: var(--color-text-inverse);
 	font-size: 1.5rem;
 	transition: var(--transition-glass);
-	box-shadow: 0 8px 32px rgba(245, 158, 11, 0.3);
+	box-shadow: 0 8px 32px rgba(235, 203, 139, 0.3);
 }
 
 .project-card:hover .project-icon {
 	transform: scale(1.1);
-	box-shadow: 0 12px 48px rgba(245, 158, 11, 0.4);
+	box-shadow: 0 12px 48px rgba(235, 203, 139, 0.4);
 }
 
 .project-card h3 {
@@ -1105,38 +1090,6 @@ body::after {
 }
 
 /* ==========================================================================
-   Animation Utilities
-   ========================================================================== */
-
-@keyframes fadeInUp {
-	from {
-		opacity: 0;
-		transform: translateY(30px);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
-@keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
-
-.animate-fade-in-up {
-	animation: fadeInUp 0.6s ease-out;
-}
-
-.animate-fade-in {
-	animation: fadeIn 0.4s ease-out;
-}
-
-/* ==========================================================================
    Accessibility Improvements
    ========================================================================== */
 
@@ -1146,23 +1099,6 @@ body::after {
 	outline-offset: 2px;
 }
 
-/* Skip link */
-.skip-link {
-	position: absolute;
-	top: -40px;
-	left: 6px;
-	background: var(--color-primary);
-	color: var(--color-text-inverse);
-	padding: var(--space-2);
-	text-decoration: none;
-	border-radius: 0 0 var(--radius-glass-sm) var(--radius-glass-sm);
-	z-index: 1000;
-	transition: var(--transition-fast);
-}
-
-.skip-link:focus {
-	top: 0;
-}
 
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
@@ -1183,7 +1119,4 @@ body::after {
 		transform: none;
 	}
 
-	.logo-icon {
-		animation: none;
-	}
 }
