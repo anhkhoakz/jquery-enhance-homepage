@@ -1,5 +1,5 @@
 // Theme toggle functionality
-const toggleTheme = () => {
+function toggleTheme() {
     const html = document.documentElement;
     const currentTheme = html.getAttribute('data-theme');
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Copy code functionality
-const copyCode = (button) => {
+function copyCode(button) {
     const codeBlock = button.closest('.code-card').querySelector('.code-block code');
     const code = codeBlock.textContent;
 
