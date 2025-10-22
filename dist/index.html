@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="jQuery: Write Less, Do More">
+    <meta name="author" content="OpenJS Foundation - openjsf.org">
+
+    <title>jQuery - Write Less, Do More</title>
+
+    <!-- Phosphor Icons -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+
+    <link rel="icon" href="https://cdn.simpleicons.org/jquery" type="image/x-icon">
+
+    <!-- Stylesheets -->
+    
+    
+<link rel="stylesheet" crossorigin href="./index-xtxcnk5r.css"><script type="module" crossorigin src="./index-e8g1edj8.js"></script></head>
+
+<body>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+        <i class="ph ph-moon" id="theme-icon"></i>
+    </button>
+
+    <!-- Banner -->
+    <div class="banner">
+        <i class="ph ph-warning-circle"></i>
+        <span>jQuery 4.0 is coming soon! Prepare by <a href="https://jquery.com/download/">upgrading</a> to the latest jQuery 3.x release. Learn more about our <a href="https://jquery.com/support/">version support</a>.</span>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="https://cdn.simpleicons.org/jquery" alt="jQuery Logo" class="logo-image" width="100" height="100">
+                    <h1>jQuery</h1>
+                </div>
+                <p class="header-subtitle">Write Less, Do More</p>
+                <a href="https://jquery.com/download/" class="btn btn-primary">
+                    <i class="ph ph-download"></i>
+                    <span>Download jQuery v3.7.1</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="https://jquery.com/download/"><i class="ph ph-download-simple"></i> Download</a></li>
+                <li><a href="https://api.jquery.com/"><i class="ph ph-book-open"></i> API Docs</a></li>
+                <li><a href="https://blog.jquery.com/"><i class="ph ph-newspaper"></i> Blog</a></li>
+                <li><a href="https://plugins.jquery.com/"><i class="ph ph-puzzle-piece"></i> Plugins</a></li>
+                <li><a href="https://jquery.com/browser-support/"><i class="ph ph-globe"></i> Browser Support</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Features Section -->
+            <section class="section features-section">
+                <h2 class="section-title">Why Choose jQuery?</h2>
+                <div class="features-grid">
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon">
+                            <i class="ph ph-lightning"></i>
+                        </div>
+                        <h3>Lightweight Footprint</h3>
+                        <p>Only 30kB minified and gzipped. Can also be included as an AMD module</p>
+                    </div>
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon">
+                            <i class="ph ph-paint-brush"></i>
+                        </div>
+                        <h3>CSS3 Compliant</h3>
+                        <p>Supports CSS3 selectors to find elements as well as in style property manipulation</p>
+                    </div>
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon">
+                            <i class="ph ph-globe-hemisphere-west"></i>
+                        </div>
+                        <h3>Cross-Browser</h3>
+                        <p><a href="https://jquery.com/browser-support/">Chrome, Edge, Firefox, IE, Safari, Android, iOS, and more</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- What is jQuery Section -->
+            <section class="section about-section">
+                <div class="grid grid-2">
+                    <div class="glass-card">
+                        <h2><i class="ph ph-question"></i> What is jQuery?</h2>
+                        <p>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.</p>
+                    </div>
+                    <div class="glass-card">
+                        <h2><i class="ph ph-books"></i> Resources</h2>
+                        <ul class="resource-list">
+                            <li><a href="https://api.jquery.com/"><i class="ph ph-book"></i> jQuery Core API Documentation</a></li>
+                            <li><a href="https://learn.jquery.com/"><i class="ph ph-graduation-cap"></i> jQuery Learning Center</a></li>
+                            <li><a href="https://blog.jquery.com/"><i class="ph ph-newspaper"></i> jQuery Blog</a></li>
+                            <li><a href="https://contribute.jquery.com/"><i class="ph ph-hand-heart"></i> Contribute to jQuery</a></li>
+                            <li><a href="https://github.com/jquery/jquery/issues"><i class="ph ph-bug"></i> Browse or Submit jQuery Bugs</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Code Examples Section -->
+            <section class="section code-section">
+                <h2 class="section-title"><i class="ph ph-code"></i> A Brief Look</h2>
+
+                <div class="code-examples">
+                    <div class="code-card glass-card">
+                        <div class="code-header">
+                            <h3><i class="ph ph-cursor"></i> DOM Traversal and Manipulation</h3>
+                            <button class="copy-btn" onclick="copyCode(this)">
+                                <i class="ph ph-copy"></i>
+                            </button>
+                        </div>
+                        <p>Get the <code>&lt;button&gt;</code> element with the class 'continue' and change its HTML to 'Next Step...'</p>
+                        <div class="code-block">
+                            <code>$("button.continue").html("Next Step...")</code>
+                        </div>
+                    </div>
+
+                    <div class="code-card glass-card">
+                        <div class="code-header">
+                            <h3><i class="ph ph-cursor-click"></i> Event Handling</h3>
+                            <button class="copy-btn" onclick="copyCode(this)">
+                                <i class="ph ph-copy"></i>
+                            </button>
+                        </div>
+                        <p>Show the <code>#banner-message</code> element that is hidden with <code>display:none</code> in its CSS when any button in <code>#button-container</code> is clicked.</p>
+                        <div class="code-block">
+                            <code>var hiddenBox = $("#banner-message");
+$("#button-container button").on("click", function(event) {
+  hiddenBox.show();
+});</code>
+                        </div>
+                    </div>
+
+                    <div class="code-card glass-card">
+                        <div class="code-header">
+                            <h3><i class="ph ph-cloud-arrow-up"></i> Ajax</h3>
+                            <button class="copy-btn" onclick="copyCode(this)">
+                                <i class="ph ph-copy"></i>
+                            </button>
+                        </div>
+                        <p>Call a local script on the server <code>/api/getWeather</code> with the query parameter <code>zipcode=97201</code> and replace the element <code>#weather-temp</code>'s html with the returned text.</p>
+                        <div class="code-block">
+                            <code>$.ajax({
+  url: "/api/getWeather",
+  data: {
+    zipcode: 97201
+  },
+  success: function(result) {
+    $("#weather-temp").html("&lt;strong&gt;" + result + "&lt;/strong&gt; degrees");
+  }
+});</code>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Related Projects Section -->
+            <section class="section projects-section">
+                <h2 class="section-title"><i class="ph ph-folder"></i> Related Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card glass-card">
+                        <div class="project-icon">
+                            <i class="ph ph-palette"></i>
+                        </div>
+                        <h3><a href="https://jqueryui.com/">jQuery UI</a></h3>
+                        <p>This project is in maintenance-only mode. <a href="https://blog.jquery.com/2021/10/07/jquery-maintainers-update-and-transition-jquery-ui-as-part-of-overall-modernization-efforts/">Learn more</a>.</p>
+                    </div>
+                    <div class="project-card glass-card">
+                        <div class="project-icon">
+                            <i class="ph ph-device-mobile"></i>
+                        </div>
+                        <h3><a href="https://jquerymobile.com/">jQuery Mobile</a></h3>
+                        <p>This project is deprecated. <a href="https://blog.jqueryui.com/2021/10/jquery-maintainers-continue-modernization-initiative-with-deprecation-of-jquery-mobile/">Learn more</a>.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="ph ph-graduation-cap"></i> Learning</h3>
+                    <ul>
+                        <li><a href="https://learn.jquery.com/"><i class="ph ph-book-open"></i> Learning Center</a></li>
+                        <li><a href="https://api.jquery.com/"><i class="ph ph-book"></i> API Documentation</a></li>
+                        <li><a href="https://blog.jquery.com/"><i class="ph ph-newspaper"></i> Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="ph ph-users"></i> Community</h3>
+                    <ul>
+                        <li><a href="https://jquery.com/support/"><i class="ph ph-question"></i> Support</a></li>
+                        <li><a href="https://github.com/jquery/jquery"><i class="ph ph-github-logo"></i> GitHub</a></li>
+                        <li><a href="https://twitter.com/jquery"><i class="ph ph-twitter-logo"></i> Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="ph ph-buildings"></i> Foundation</h3>
+                    <ul>
+                        <li><a href="https://openjsf.org/"><i class="ph ph-shield"></i> OpenJS Foundation</a></li>
+                        <li><a href="https://jquery.com/team"><i class="ph ph-users-three"></i> jQuery Team</a></li>
+                        <li><a href="https://code-of-conduct.openjsf.org/"><i class="ph ph-handshake"></i> Code of Conduct</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Books Section -->
+            <div class="books-section">
+                <h3><i class="ph ph-books"></i> Books</h3>
+                <div class="books-grid">
+                    <div class="book-card glass-card">
+                        <a href="https://www.packtpub.com/en-us/product/learning-jquery-fourth-edition-9781782163152">
+                            <img src="./learning-jquery-4th-ed-wb8yz3yk.jpg" alt="Learning jQuery 4th Edition" loading="lazy">
+                            <h4>Learning jQuery Fourth Edition</h4>
+                            <cite>Karl Swedberg and Jonathan Chaffer</cite>
+                        </a>
+                    </div>
+                    <div class="book-card glass-card">
+                        <a href="https://www.manning.com/books/jquery-in-action-third-edition">
+                            <img src="./jquery-in-action-5dy7cpqr.jpg" alt="jQuery in Action" loading="lazy">
+                            <h4>jQuery in Action</h4>
+                            <cite>Bear Bibeault, Yehuda Katz, and Aurelio De Rosa</cite>
+                        </a>
+                    </div>
+                    <div class="book-card glass-card">
+                        <a href="https://www.syncfusion.com/ebooks/jquery">
+                            <img src="./jquery-succinctly-qyqdwkhp.jpg" alt="jQuery Succinctly" loading="lazy">
+                            <h4>jQuery Succinctly</h4>
+                            <cite>Cody Lindley</cite>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Copyright 2025 <a href="https://openjsf.org/">OpenJS Foundation</a> and jQuery contributors. All rights reserved. See <a href="https://jquery.com/license/">jQuery License</a> for more information.</p>
+                <p><a href="https://www.digitalocean.com/"><img src="https://cdn.simpleicons.org/digitalocean" alt="Digital Ocean" width="16" height="16"> Web hosting by Digital Ocean</a> | <a href="https://www.fastly.com/"><img src="https://cdn.simpleicons.org/fastly" alt="Fastly" width="16" height="16"> CDN by Fastly</a> | <a href="https://wordpress.org/"><img src="https://cdn.simpleicons.org/wordpress" alt="WordPress" width="16" height="16"> Powered by WordPress</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modern JavaScript -->
+    
+</body>
+</html>
